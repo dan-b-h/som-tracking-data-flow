@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>B&amp;H – Tracking-Setups Social Media</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;padding:24px;background:#fff;}
+.bh-wrap{font-family:'Montserrat','Trebuchet MS',Arial,sans-serif;color:#58585B;max-width:1180px;margin:0 auto;}
+.bh-head{display:flex;align-items:center;gap:14px;margin-bottom:6px;}
+.bh-logo{display:flex;gap:6px;}
+.bh-logo svg{display:block;}
+.bh-title{font-size:24px;font-weight:700;line-height:1.1;}
+.bh-sub{font-size:14px;font-weight:500;color:#777;}
+.bh-rule{height:3px;background:#F5821F;border:0;margin:8px 0 16px;}
+.bh-controls{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-bottom:6px;}
+.bh-tabs{display:flex;gap:8px;flex-wrap:wrap;}
+.bh-tab{font:600 14px Montserrat,sans-serif;padding:9px 16px;border-radius:24px;border:2px solid #d9d9dd;background:#fff;color:#58585B;cursor:pointer;transition:.2s;}
+.bh-tab:hover{border-color:#F5821F;}
+.bh-tab.on{background:#F5821F;border-color:#F5821F;color:#fff;}
+.bh-ga4{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;}
+.bh-mini{font:600 13px Montserrat,sans-serif;padding:6px 12px;border-radius:18px;border:2px solid #d9d9dd;background:#fff;color:#58585B;cursor:pointer;}
+.bh-mini.on{background:#58585B;border-color:#58585B;color:#fff;}
+.bh-mini:disabled{opacity:.4;cursor:not-allowed;}
+.bh-play{font:600 13px Montserrat,sans-serif;padding:6px 14px;border-radius:18px;border:2px solid #58585B;background:#fff;color:#58585B;cursor:pointer;}
+.bh-speed{display:flex;align-items:center;gap:6px;font-size:12px;color:#777;}
+.bh-speed input{accent-color:#F5821F;}
+.bh-desc{background:#faf7f3;border-left:4px solid #F5821F;padding:12px 16px;border-radius:8px;font-size:14px;line-height:1.55;margin-top:14px;}
+.bh-legend{display:flex;flex-wrap:wrap;gap:18px;margin-top:14px;font-size:13px;}
+.bh-leg{display:flex;align-items:center;gap:8px;}
+.bh-swatch{width:30px;height:0;border-top-width:4px;border-top-style:solid;}
+.edge{fill:none;transition:opacity .45s,stroke-width .45s;}
+.edge.muted{opacity:.5;}
+.edge.off{opacity:.10;}
+.bh-node{transition:opacity .45s;}
+.bh-node.muted{opacity:.6;}
+.bh-node.off{opacity:.13;}
+.bh-nlabel{font:600 16px Montserrat,sans-serif;fill:#58585B;}
+.bh-note{font:500 11px Montserrat,sans-serif;fill:#9A9A9E;}
+svg#bhsvg{width:100%;height:auto;display:block;margin-top:8px;}
+</style>
+</head>
+<body>
+<div class="bh-wrap">
+ <div class="bh-head">
+  <div class="bh-logo">
+   <svg width="44" height="44" viewBox="0 0 44 44"><circle cx="22" cy="22" r="21" fill="#F5821F"/><text x="22" y="31" font-size="26" font-weight="700" fill="#fff" text-anchor="middle" font-family="Montserrat,sans-serif">B</text></svg>
+   <svg width="44" height="44" viewBox="0 0 44 44"><circle cx="22" cy="22" r="21" fill="#F5821F"/><text x="22" y="31" font-size="26" font-weight="700" fill="#fff" text-anchor="middle" font-family="Montserrat,sans-serif">H</text></svg>
+  </div>
+  <div>
+   <div class="bh-title">Tracking-Setups für Social Media</div>
+   <div class="bh-sub">Learning Morning · Client-Side, Server-Side &amp; Hybrid</div>
+  </div>
+ </div>
+ <hr class="bh-rule">
+
+ <div class="bh-controls">
+  <div class="bh-tabs">
+   <button class="bh-tab" data-sc="client">① Nur Client-Side</button>
+   <button class="bh-tab" data-sc="server">② Nur Server-Side</button>
+   <button class="bh-tab" data-sc="hybrid">③ Hybrid (empfohlen)</button>
+  </div>
+  <div class="bh-ga4">GA4-Datenfluss:
+   <button class="bh-mini" id="ga4-web" data-ga4="web">via Web</button>
+   <button class="bh-mini" id="ga4-srv" data-ga4="server">via Server-Container</button>
+  </div>
+  <button class="bh-play" id="bh-play">❚❚ Pause</button>
+  <div class="bh-speed">Tempo <input id="bh-speed" type="range" min="0.4" max="2.2" step="0.1" value="1"></div>
+ </div>
+
+ <svg id="bhsvg" viewBox="0 0 1180 760" role="img" aria-label="Animiertes Datenfluss-Diagramm Social Media Tracking">
+  <defs>
+   <marker id="m-browser" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#F5821F"/></marker>
+   <marker id="m-server" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#1155CC"/></marker>
+   <marker id="m-core" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#58585B"/></marker>
+   <marker id="m-core-s" markerWidth="9" markerHeight="9" refX="2" refY="3" orient="auto"><path d="M8,0 L0,3 L8,6 Z" fill="#58585B"/></marker>
+   <marker id="m-dedup" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#8A8A8A"/></marker>
+   <marker id="m-dedup-s" markerWidth="9" markerHeight="9" refX="2" refY="3" orient="auto"><path d="M8,0 L0,3 L8,6 Z" fill="#8A8A8A"/></marker>
+  </defs>
+  <g id="bh-edges"></g>
+  <g id="bh-dots"></g>
+  <g id="bh-nodes"></g>
+ </svg>
+
+ <div class="bh-legend">
+  <div class="bh-leg"><span class="bh-swatch" style="border-top-color:#F5821F"></span> Browser-Tracking (Client-Side) – via Pixel im Browser</div>
+  <div class="bh-leg"><span class="bh-swatch" style="border-top-color:#1155CC"></span> Server-Tracking (Server-Side) – via Server-Container &amp; API</div>
+  <div class="bh-leg"><span class="bh-swatch" style="border-top:3px dashed #8A8A8A;height:0"></span> Event-Deduplizierung (nur Hybrid)</div>
+  <div class="bh-leg"><span class="bh-swatch" style="border-top:3px dashed #b9b9bd;height:0"></span> GA4 – nur zur Übersicht (von B&amp;H nicht aufgesetzt)</div>
+ </div>
+
+ <div class="bh-desc" id="bh-desc"></div>
+</div>
+
+<script>
+(function(){
+ const NS='http://www.w3.org/2000/svg';
+ const C={orange:'#F5821F',blue:'#1155CC',anth:'#58585B',dd:'#8A8A8A'};
+ const NODES={
+  website:{x:115,y:370,r:52,label:'Website',icon:'web'},
+  webc:{x:405,y:215,r:58,label:'Web Container',icon:'gtm'},
+  serverc:{x:405,y:565,r:58,label:'Server Container',icon:'gtm'},
+  ga4:{x:1010,y:95,r:46,label:'GA4',icon:'ga4',muted:true},
+  fbpx:{x:1010,y:255,r:46,label:'Meta Pixel',icon:'meta'},
+  fbcapi:{x:1010,y:390,r:46,label:'Meta CAPI',icon:'meta'},
+  ttpx:{x:1010,y:545,r:46,label:'TikTok Pixel',icon:'tiktok'},
+  ttapi:{x:1010,y:680,r:46,label:'TikTok Events API',icon:'tiktok'}
+ };
+ const TT="M15,0 a16,16 0 0 0 16,15 v10 a26,26 0 0 1 -16,-5 v17 a21,21 0 1 1 -21,-21 v10 a10,10 0 1 0 10,10 z";
+ const ICON={
+  web:'<circle r="40" fill="#fff" stroke="'+C.anth+'" stroke-width="5"/><ellipse rx="19" ry="40" fill="none" stroke="'+C.anth+'" stroke-width="3.5"/><line x1="-40" y1="0" x2="40" y2="0" stroke="'+C.anth+'" stroke-width="3.5"/><line x1="-33" y1="-20" x2="33" y2="-20" stroke="'+C.anth+'" stroke-width="3.5"/><line x1="-33" y1="20" x2="33" y2="20" stroke="'+C.anth+'" stroke-width="3.5"/>',
+  gtm:'<g transform="rotate(45)"><rect x="-38" y="-38" width="76" height="76" rx="12" fill="#8AB4F8"/><rect x="-38" y="-10" width="76" height="48" rx="12" fill="#4285F4"/><circle cx="0" cy="20" r="12" fill="#1A73E8"/></g>',
+  ga4:'<rect x="14" y="-26" width="14" height="52" rx="5" fill="#F9AB00"/><rect x="-6" y="-44" width="14" height="70" rx="5" fill="#F9AB00"/><circle cx="-22" cy="18" r="10" fill="#E37400"/><rect x="-29" y="0" width="14" height="26" rx="5" fill="#E37400"/>',
+  meta:'<circle r="40" fill="#1877F2"/><path d="M7,-20 h9 v14 h-9 a7,7 0 0 0 -7,7 v7 h15 l-3,14 h-12 v31 h-16 v-31 h-11 v-14 h11 v-9 a20,20 0 0 1 20,-20 z" fill="#fff"/>',
+  tiktok:'<circle r="40" fill="#010101"/><g transform="translate(-13,-18)"><path d="'+TT+'" fill="#FE2C55" transform="translate(2,2)"/><path d="'+TT+'" fill="#25F4EE" transform="translate(-2,-2)"/><path d="'+TT+'" fill="#fff"/></g>'
+ };
+ const EDGES=[
+  {id:'site_wc',a:'website',b:'webc',type:'core',both:true},
+  {id:'wc_fbpx',a:'webc',b:'fbpx',type:'browser'},
+  {id:'wc_ttpx',a:'webc',b:'ttpx',type:'browser'},
+  {id:'wc_ga4',a:'webc',b:'ga4',type:'browser',muted:true},
+  {id:'wc_sc',a:'webc',b:'serverc',type:'server'},
+  {id:'sc_fbcapi',a:'serverc',b:'fbcapi',type:'server'},
+  {id:'sc_ttapi',a:'serverc',b:'ttapi',type:'server'},
+  {id:'sc_ga4',a:'serverc',b:'ga4',type:'server',muted:true},
+  {id:'dd_meta',a:'fbpx',b:'fbcapi',type:'dedup',curve:1,both:true},
+  {id:'dd_tt',a:'ttpx',b:'ttapi',type:'dedup',curve:1,both:true}
+ ];
+ const DESC={
+  client:'<b>① Nur Client-Side Tracking (Browser).</b> Alle Events werden direkt im Browser über Pixel/Tags erfasst und an Meta, TikTok und GA4 gesendet. Einfach umzusetzen – aber anfällig für Ad-Blocker, Safari/ITP und fehlende Cookie-Einwilligungen. Das führt zu spürbaren Datenverlusten.',
+  server:'<b>② Nur Server-Side Tracking.</b> Der Web-Container leitet Events an den Server-Container weiter, der serverseitig sendet: Meta Conversions API, TikTok Events API und GA4. Robuster, datenschutzfreundlicher und deutlich weniger Verluste – dafür mehr Setup-Aufwand.',
+  hybrid:'<b>③ Hybrides Tracking (Client + Server).</b> Pixel im Browser UND serverseitige API laufen parallel. Die <b>Event-Deduplizierung</b> verhindert Doppelzählung. Beste Datenqualität – unsere Empfehlung für Meta und TikTok.'
+ };
+ const GA4NOTE=' &nbsp;·&nbsp; <span style="color:#9A9A9E"><b>GA4 (grau)</b> setzen wir bei B&amp;H nicht selbst auf – hier nur zur Einordnung. Bei vorhandenem Server-Container kannst du wählen, ob GA4-Daten direkt via Web oder via Server-Container fliessen.</span>';
+
+ const edgesG=document.getElementById('bh-edges');
+ const dots=document.getElementById('bh-dots');
+ const nodesG=document.getElementById('bh-nodes');
+ const desc=document.getElementById('bh-desc');
+ let state={scenario:'client',ga4:'web'};
+ let playing=true, speed=1;
+
+ function pathFor(e){
+  const a=NODES[e.a], b=NODES[e.b];
+  if(e.curve){
+   const cx=a.x+150;
+   return 'M'+(a.x+34)+','+(a.y+18)+' C '+cx+','+(a.y+20)+' '+cx+','+(b.y-20)+' '+(b.x+34)+','+(b.y-18);
+  }
+  const dx=b.x-a.x, dy=b.y-a.y, L=Math.hypot(dx,dy), ux=dx/L, uy=dy/L;
+  return 'M'+(a.x+ux*a.r)+','+(a.y+uy*a.r)+' L '+(b.x-ux*b.r)+','+(b.y-uy*b.r);
+ }
+ function colOf(t){return t==='browser'?C.orange:t==='server'?C.blue:t==='core'?C.anth:C.dd;}
+
+ // build nodes
+ Object.keys(NODES).forEach(function(id){
+  const n=NODES[id];
+  const g=document.createElementNS(NS,'g');
+  g.setAttribute('class','bh-node'+(n.muted?' muted':''));
+  g.setAttribute('id','n-'+id);
+  g.setAttribute('transform','translate('+n.x+','+n.y+')');
+  let h=ICON[n.icon]+'<text class="bh-nlabel" y="'+(n.r+26)+'" text-anchor="middle">'+n.label+'</text>';
+  if(n.muted) h+='<text class="bh-note" y="'+(n.r+44)+'" text-anchor="middle">von B&amp;H nicht aufgesetzt</text>';
+  g.innerHTML=h;
+  nodesG.appendChild(g);
+ });
+
+ // build edges
+ EDGES.forEach(function(e){
+  const p=document.createElementNS(NS,'path');
+  p.setAttribute('d',pathFor(e));
+  p.setAttribute('class','edge'+(e.muted?' muted':''));
+  p.setAttribute('stroke',colOf(e.type));
+  p.setAttribute('stroke-width', e.muted?2.4:(e.type==='dedup'?2.4:e.type==='core'?3:4));
+  p.setAttribute('stroke-linecap','round');
+  if(e.type==='dedup') p.setAttribute('stroke-dasharray','2 7');
+  if(e.muted) p.setAttribute('stroke-dasharray','7 6');
+  p.setAttribute('marker-end','url(#m-'+e.type+')');
+  if(e.both) p.setAttribute('marker-start','url(#m-'+e.type+'-s)');
+  edgesG.appendChild(p);
+  e.el=p; e.len=p.getTotalLength(); e.parts=[]; e.acc=0; e.flip=false; e.act=false;
+ });
+
+ function isActive(e,s){
+  switch(e.id){
+   case 'site_wc': return true;
+   case 'wc_fbpx': return s.scenario!=='server';
+   case 'wc_ttpx': return s.scenario!=='server';
+   case 'wc_ga4': return s.ga4==='web';
+   case 'wc_sc': return s.scenario!=='client' || s.ga4==='server';
+   case 'sc_fbcapi': return s.scenario!=='client';
+   case 'sc_ttapi': return s.scenario!=='client';
+   case 'sc_ga4': return s.ga4==='server';
+   case 'dd_meta': return s.scenario==='hybrid';
+   case 'dd_tt': return s.scenario==='hybrid';
+  }
+  return false;
+ }
+
+ function spawn(e){
+  let dir=1;
+  if(e.both){ e.flip=!e.flip; dir=e.flip?1:-1; }
+  const c=document.createElementNS(NS,'circle');
+  c.setAttribute('r', e.type==='dedup'?3.5:(e.muted?4:5));
+  c.setAttribute('fill', colOf(e.type));
+  if(e.muted) c.setAttribute('opacity','0.85');
+  dots.appendChild(c);
+  e.parts.push({el:c, d: dir>0?0:e.len, dir:dir, v:(e.type==='dedup'?90:130)});
+ }
+ function advance(e,p,dt){
+  p.d += p.v*dt*speed*p.dir;
+  if((p.dir>0 && p.d>=e.len) || (p.dir<0 && p.d<=0)){ p.el.remove(); return false; }
+  const pt=e.el.getPointAtLength(p.d);
+  p.el.setAttribute('cx',pt.x); p.el.setAttribute('cy',pt.y);
+  return true;
+ }
+
+ function apply(){
+  if(state.scenario==='client') state.ga4='web';
+  const an=new Set(['website','webc','ga4']);
+  EDGES.forEach(function(e){
+   const act=isActive(e,state);
+   e.act=act;
+   e.el.classList.toggle('off',!act);
+   if(!act){ e.parts.forEach(function(p){p.el.remove();}); e.parts=[]; }
+   if(act){ an.add(e.a); an.add(e.b); }
+  });
+  Object.keys(NODES).forEach(function(id){
+   document.getElementById('n-'+id).classList.toggle('off',!an.has(id));
+  });
+  document.querySelectorAll('.bh-tab').forEach(function(b){ b.classList.toggle('on', b.dataset.sc===state.scenario); });
+  const lock=state.scenario==='client';
+  const w=document.getElementById('ga4-web'), s=document.getElementById('ga4-srv');
+  w.disabled=lock; s.disabled=lock;
+  w.classList.toggle('on',state.ga4==='web');
+  s.classList.toggle('on',state.ga4==='server');
+  desc.innerHTML=DESC[state.scenario]+GA4NOTE;
+ }
+
+ document.querySelectorAll('.bh-tab').forEach(function(b){
+  b.addEventListener('click',function(){
+   state.scenario=b.dataset.sc;
+   state.ga4 = state.scenario==='client'?'web':'server';
+   apply();
+  });
+ });
+ document.getElementById('ga4-web').addEventListener('click',function(){ if(state.scenario!=='client'){state.ga4='web';apply();}});
+ document.getElementById('ga4-srv').addEventListener('click',function(){ if(state.scenario!=='client'){state.ga4='server';apply();}});
+ const playBtn=document.getElementById('bh-play');
+ playBtn.addEventListener('click',function(){ playing=!playing; playBtn.textContent=playing?'❚❚ Pause':'▶ Play'; });
+ document.getElementById('bh-speed').addEventListener('input',function(ev){ speed=parseFloat(ev.target.value); });
+
+ let last=performance.now();
+ function loop(now){
+  const dt=Math.min(0.05,(now-last)/1000); last=now;
+  if(playing){
+   EDGES.forEach(function(e){
+    if(!e.act) return;
+    const base=e.type==='dedup'?1.5:(e.muted?1.7:0.8);
+    e.acc+=dt;
+    const intv=base/speed;
+    while(e.acc>=intv && e.parts.length<14){ spawn(e); e.acc-=intv; }
+    e.parts=e.parts.filter(function(p){return advance(e,p,dt);});
+   });
+  }
+  requestAnimationFrame(loop);
+ }
+ apply();
+ requestAnimationFrame(loop);
+})();
+</script>
+</body>
+</html>
