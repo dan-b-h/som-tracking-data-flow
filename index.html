@@ -6,53 +6,54 @@
 <title>B&amp;H – Tracking-Setups Social Media</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 body{margin:0;padding:24px;background:#fff;}
-.bh-wrap{font-family:'Montserrat','Trebuchet MS',Arial,sans-serif;color:#58585B;max-width:1180px;margin:0 auto;}
-.bh-head{display:flex;align-items:center;gap:14px;margin-bottom:6px;}
-.bh-logo{display:flex;gap:6px;}
+.bh-wrap{font-family:'Montserrat','Trebuchet MS',Arial,sans-serif;color:#58585B;max-width:1440px;margin:0 auto;}
+.bh-head{display:flex;align-items:center;gap:16px;margin-bottom:6px;}
 .bh-logo svg{display:block;}
-.bh-title{font-size:24px;font-weight:700;line-height:1.1;}
-.bh-sub{font-size:14px;font-weight:500;color:#777;}
-.bh-rule{height:3px;background:#F5821F;border:0;margin:8px 0 16px;}
+.bh-title{font-size:24px;font-weight:800;line-height:1.1;color:#3f3f42;}
+.bh-sub{font-size:14px;font-weight:500;color:#F5821F;}
+.bh-rule{height:4px;background:#F5821F;border:0;margin:10px 0 16px;border-radius:2px;}
 .bh-controls{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-bottom:6px;}
 .bh-tabs{display:flex;gap:8px;flex-wrap:wrap;}
-.bh-tab{font:600 14px Montserrat,sans-serif;padding:9px 16px;border-radius:24px;border:2px solid #d9d9dd;background:#fff;color:#58585B;cursor:pointer;transition:.2s;}
+.bh-tab{font:600 14px Montserrat,sans-serif;padding:9px 16px;border-radius:24px;border:2px solid #e6d8c9;background:#fff;color:#58585B;cursor:pointer;transition:.2s;}
 .bh-tab:hover{border-color:#F5821F;}
 .bh-tab.on{background:#F5821F;border-color:#F5821F;color:#fff;}
-.bh-ga4{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;}
+.bh-grp{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;}
 .bh-mini{font:600 13px Montserrat,sans-serif;padding:6px 12px;border-radius:18px;border:2px solid #d9d9dd;background:#fff;color:#58585B;cursor:pointer;}
 .bh-mini.on{background:#58585B;border-color:#58585B;color:#fff;}
 .bh-mini:disabled{opacity:.4;cursor:not-allowed;}
 .bh-play{font:600 13px Montserrat,sans-serif;padding:6px 14px;border-radius:18px;border:2px solid #58585B;background:#fff;color:#58585B;cursor:pointer;}
 .bh-speed{display:flex;align-items:center;gap:6px;font-size:12px;color:#777;}
 .bh-speed input{accent-color:#F5821F;}
-.bh-desc{background:#faf7f3;border-left:4px solid #F5821F;padding:12px 16px;border-radius:8px;font-size:14px;line-height:1.55;margin-top:14px;}
-.bh-legend{display:flex;flex-wrap:wrap;gap:18px;margin-top:14px;font-size:13px;}
+.bh-desc{background:#fff7ef;border-left:4px solid #F5821F;padding:12px 16px;border-radius:8px;font-size:14px;line-height:1.55;margin-top:14px;}
+.bh-legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:14px;font-size:13px;align-items:center;}
 .bh-leg{display:flex;align-items:center;gap:8px;}
 .bh-swatch{width:30px;height:0;border-top-width:4px;border-top-style:solid;}
 .edge{fill:none;transition:opacity .45s,stroke-width .45s;}
 .edge.muted{opacity:.5;}
-.edge.off{opacity:.10;}
+.edge.off{opacity:.08;}
 .bh-node{transition:opacity .45s;}
-.bh-node.muted{opacity:.6;}
-.bh-node.off{opacity:.13;}
+.bh-node.muted{opacity:.62;}
+.bh-node.off{opacity:.10;}
+.bh-box{transition:opacity .45s;}
 .bh-nlabel{font:600 16px Montserrat,sans-serif;fill:#58585B;}
+.bh-nsub{font:600 13px 'Courier New',monospace;fill:#F5821F;}
 .bh-note{font:500 11px Montserrat,sans-serif;fill:#9A9A9E;}
+.bh-dlabel{font:700 11px Montserrat,sans-serif;fill:#8A8A8A;letter-spacing:.5px;}
+.bh-fp{transition:opacity .45s;}
+.bh-fp.off{opacity:.10;}
 svg#bhsvg{width:100%;height:auto;display:block;margin-top:8px;}
 </style>
 </head>
 <body>
 <div class="bh-wrap">
  <div class="bh-head">
-  <div class="bh-logo">
-   <svg width="44" height="44" viewBox="0 0 44 44"><circle cx="22" cy="22" r="21" fill="#F5821F"/><text x="22" y="31" font-size="26" font-weight="700" fill="#fff" text-anchor="middle" font-family="Montserrat,sans-serif">B</text></svg>
-   <svg width="44" height="44" viewBox="0 0 44 44"><circle cx="22" cy="22" r="21" fill="#F5821F"/><text x="22" y="31" font-size="26" font-weight="700" fill="#fff" text-anchor="middle" font-family="Montserrat,sans-serif">H</text></svg>
-  </div>
+  <div class="bh-logo"><svg id="bh-logo" viewBox="0 0 200 100" width="92" height="46" aria-label="B&amp;H Logo"></svg></div>
   <div>
    <div class="bh-title">Tracking-Setups für Social Media</div>
-   <div class="bh-sub">Learning Morning · Client-Side, Server-Side &amp; Hybrid</div>
+   <div class="bh-sub">Learning Morning · Client-Side, Server-Side &amp; Hybrid · Events Manager, Ads &amp; First-Party</div>
   </div>
  </div>
  <hr class="bh-rule">
@@ -63,15 +64,19 @@ svg#bhsvg{width:100%;height:auto;display:block;margin-top:8px;}
    <button class="bh-tab" data-sc="server">② Nur Server-Side</button>
    <button class="bh-tab" data-sc="hybrid">③ Hybrid (empfohlen)</button>
   </div>
-  <div class="bh-ga4">GA4-Datenfluss:
+  <div class="bh-grp">Ansicht:
+   <button class="bh-mini" id="view-track" data-v="track">Nur Tracking</button>
+   <button class="bh-mini" id="view-eco" data-v="eco">Komplettes Ökosystem</button>
+  </div>
+  <div class="bh-grp">GA4:
    <button class="bh-mini" id="ga4-web" data-ga4="web">via Web</button>
-   <button class="bh-mini" id="ga4-srv" data-ga4="server">via Server-Container</button>
+   <button class="bh-mini" id="ga4-srv" data-ga4="server">via Server</button>
   </div>
   <button class="bh-play" id="bh-play">❚❚ Pause</button>
   <div class="bh-speed">Tempo <input id="bh-speed" type="range" min="0.4" max="2.2" step="0.1" value="1"></div>
  </div>
 
- <svg id="bhsvg" viewBox="0 0 1180 760" role="img" aria-label="Animiertes Datenfluss-Diagramm Social Media Tracking">
+ <svg id="bhsvg" viewBox="0 0 1520 810" role="img" aria-label="Animiertes Datenfluss-Diagramm Social Media Tracking">
   <defs>
    <marker id="m-browser" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#F5821F"/></marker>
    <marker id="m-server" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#1155CC"/></marker>
@@ -79,17 +84,32 @@ svg#bhsvg{width:100%;height:auto;display:block;margin-top:8px;}
    <marker id="m-core-s" markerWidth="9" markerHeight="9" refX="2" refY="3" orient="auto"><path d="M8,0 L0,3 L8,6 Z" fill="#58585B"/></marker>
    <marker id="m-dedup" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#8A8A8A"/></marker>
    <marker id="m-dedup-s" markerWidth="9" markerHeight="9" refX="2" refY="3" orient="auto"><path d="M8,0 L0,3 L8,6 Z" fill="#8A8A8A"/></marker>
+   <marker id="m-traffic" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 Z" fill="#2BA84A"/></marker>
   </defs>
+  <g id="bh-boxes">
+   <g class="bh-box" id="box-meta">
+    <rect x="650" y="258" width="346" height="262" rx="16" fill="#eef4ff" stroke="#1877F2" stroke-width="2"/>
+    <text x="823" y="282" text-anchor="middle" font-family="Montserrat,sans-serif" font-size="12.5" font-weight="700" fill="#1877F2" letter-spacing="0.5">META EVENTS MANAGER</text>
+   </g>
+   <g class="bh-box" id="box-tt">
+    <rect x="652" y="560" width="130" height="232" rx="16" fill="#f5f5f6" stroke="#3a3a3a" stroke-width="2"/>
+   </g>
+  </g>
   <g id="bh-edges"></g>
+  <g id="bh-deco"></g>
   <g id="bh-dots"></g>
   <g id="bh-nodes"></g>
+  <g id="bh-fp" class="bh-fp"></g>
  </svg>
 
  <div class="bh-legend">
-  <div class="bh-leg"><span class="bh-swatch" style="border-top-color:#F5821F"></span> Browser-Tracking (Client-Side) – via Pixel im Browser</div>
-  <div class="bh-leg"><span class="bh-swatch" style="border-top-color:#1155CC"></span> Server-Tracking (Server-Side) – via Server-Container &amp; API</div>
-  <div class="bh-leg"><span class="bh-swatch" style="border-top:3px dashed #8A8A8A;height:0"></span> Event-Deduplizierung (nur Hybrid)</div>
-  <div class="bh-leg"><span class="bh-swatch" style="border-top:3px dashed #b9b9bd;height:0"></span> GA4 – nur zur Übersicht (von B&amp;H nicht aufgesetzt)</div>
+  <div class="bh-leg"><span class="bh-swatch" style="border-top-color:#F5821F"></span> Browser-Tracking (Client-Side)</div>
+  <div class="bh-leg"><span class="bh-swatch" style="border-top-color:#1155CC"></span> Server-Tracking (Server-Side)</div>
+  <div class="bh-leg"><span class="bh-swatch" style="border-top:3px dashed #8A8A8A;height:0"></span> Event-Deduplizierung (Hybrid)</div>
+  <div class="bh-leg"><svg width="34" height="10"><line x1="5" y1="5" x2="29" y2="5" stroke="#58585B" stroke-width="3"/><path d="M5,5 l6,-3 v6 z" fill="#58585B"/><path d="M29,5 l-6,-3 v6 z" fill="#58585B"/></svg> Ads ↔ Events Manager (wechselseitig)</div>
+  <div class="bh-leg"><span class="bh-swatch" style="border-top:3px dashed #2BA84A;height:0"></span> Besucher zurück auf die Website</div>
+  <div class="bh-leg"><span style="display:inline-block;width:16px;height:16px;border:2px solid #1877F2;border-radius:4px;background:#eef4ff"></span> Meta Events Manager</div>
+  <div class="bh-leg"><span class="bh-swatch" style="border-top:3px dashed #b9b9bd;height:0"></span> GA4 / Google</div>
  </div>
 
  <div class="bh-desc" id="bh-desc"></div>
@@ -98,24 +118,53 @@ svg#bhsvg{width:100%;height:auto;display:block;margin-top:8px;}
 <script>
 (function(){
  const NS='http://www.w3.org/2000/svg';
- const C={orange:'#F5821F',blue:'#1155CC',anth:'#58585B',dd:'#8A8A8A'};
+ const C={orange:'#F5821F',blue:'#1155CC',anth:'#58585B',dd:'#8A8A8A',green:'#2BA84A'};
+
+ (function buildLogo(){
+  const s=document.getElementById('bh-logo'); let h='';
+  [['B',50],['H',150]].forEach(function(p){
+   const ch=p[0], cx=p[1], cid='clip-'+ch;
+   h+='<clipPath id="'+cid+'"><circle cx="'+cx+'" cy="50" r="46"/></clipPath>';
+   h+='<g clip-path="url(#'+cid+')">';
+   h+='<circle cx="'+cx+'" cy="50" r="46" fill="#F5821F"/>';
+   for(var i=30;i>=1;i--){ h+='<text x="'+(cx+i*1.25)+'" y="50" text-anchor="middle" dominant-baseline="central" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="60" fill="#CF6A12">'+ch+'</text>'; }
+   h+='<text x="'+cx+'" y="50" text-anchor="middle" dominant-baseline="central" font-family="Montserrat,Arial,sans-serif" font-weight="800" font-size="60" fill="#FFFFFF">'+ch+'</text>';
+   h+='</g>';
+  });
+  s.innerHTML=h;
+ })();
+
  const NODES={
-  website:{x:115,y:370,r:52,label:'Website',icon:'web'},
-  webc:{x:405,y:215,r:58,label:'Web Container',icon:'gtm'},
-  serverc:{x:405,y:565,r:58,label:'Server Container',icon:'gtm'},
-  ga4:{x:1010,y:95,r:46,label:'GA4',icon:'ga4',muted:true},
-  fbpx:{x:1010,y:255,r:46,label:'Meta Pixel',icon:'meta'},
-  fbcapi:{x:1010,y:390,r:46,label:'Meta CAPI',icon:'meta'},
-  ttpx:{x:1010,y:545,r:46,label:'TikTok Pixel',icon:'tiktok'},
-  ttapi:{x:1010,y:680,r:46,label:'TikTok Events API',icon:'tiktok'}
+  website:{x:130,y:430,r:50,label:'Website',sub:'domain.ch',icon:'web'},
+  webc:{x:370,y:255,r:54,label:'Web Container',icon:'gtm'},
+  serverc:{x:370,y:585,r:54,label:'Server Container',sub:'hub.domain.ch',icon:'gtm'},
+  ga4:{x:780,y:120,r:42,label:'GA4',icon:'ga4',muted:true},
+  fbpx:{x:715,y:335,r:34,scale:0.82,label:'Meta Pixel',icon:'meta'},
+  fbcapi:{x:715,y:452,r:34,scale:0.82,label:'Meta CAPI',icon:'meta'},
+  custconv:{x:910,y:393,r:34,label:'Custom Conversions',icon:'custconv'},
+  ttpx:{x:715,y:608,r:38,label:'TikTok Pixel',icon:'tiktok'},
+  ttapi:{x:715,y:722,r:38,label:'TikTok Events API',icon:'tiktok'},
+  gads:{x:1345,y:120,r:42,label:'Google Ads',icon:'ads_google',muted:true,eco:true},
+  ytads:{x:1345,y:232,r:42,label:'YouTube Ads',icon:'ads_youtube',muted:true,eco:true},
+  metaads:{x:1345,y:393,r:42,label:'Meta Ads Manager',icon:'ads_meta',eco:true},
+  ttads:{x:1345,y:660,r:42,label:'TikTok Ads Manager',icon:'ads_tiktok',eco:true}
  };
- const TT="M15,0 a16,16 0 0 0 16,15 v10 a26,26 0 0 1 -16,-5 v17 a21,21 0 1 1 -21,-21 v10 a10,10 0 1 0 10,10 z";
+ const ANCH={ metabox:{x:1000,y:393,r:0}, ttbox:{x:784,y:660,r:0} };
+ function getN(id){ return NODES[id]||ANCH[id]; }
+
+ const TTN='♪';
+ function bars(c){return '<rect x="-19" y="-2" width="10" height="22" rx="3" fill="'+c+'"/><rect x="-5" y="-14" width="10" height="34" rx="3" fill="'+c+'"/><rect x="9" y="-22" width="10" height="42" rx="3" fill="'+c+'"/>';}
  const ICON={
   web:'<circle r="40" fill="#fff" stroke="'+C.anth+'" stroke-width="5"/><ellipse rx="19" ry="40" fill="none" stroke="'+C.anth+'" stroke-width="3.5"/><line x1="-40" y1="0" x2="40" y2="0" stroke="'+C.anth+'" stroke-width="3.5"/><line x1="-33" y1="-20" x2="33" y2="-20" stroke="'+C.anth+'" stroke-width="3.5"/><line x1="-33" y1="20" x2="33" y2="20" stroke="'+C.anth+'" stroke-width="3.5"/>',
   gtm:'<g transform="rotate(45)"><rect x="-38" y="-38" width="76" height="76" rx="12" fill="#8AB4F8"/><rect x="-38" y="-10" width="76" height="48" rx="12" fill="#4285F4"/><circle cx="0" cy="20" r="12" fill="#1A73E8"/></g>',
   ga4:'<rect x="14" y="-26" width="14" height="52" rx="5" fill="#F9AB00"/><rect x="-6" y="-44" width="14" height="70" rx="5" fill="#F9AB00"/><circle cx="-22" cy="18" r="10" fill="#E37400"/><rect x="-29" y="0" width="14" height="26" rx="5" fill="#E37400"/>',
-  meta:'<circle r="40" fill="#1877F2"/><path d="M7,-20 h9 v14 h-9 a7,7 0 0 0 -7,7 v7 h15 l-3,14 h-12 v31 h-16 v-31 h-11 v-14 h11 v-9 a20,20 0 0 1 20,-20 z" fill="#fff"/>',
-  tiktok:'<circle r="40" fill="#010101"/><g transform="translate(-13,-18)"><path d="'+TT+'" fill="#FE2C55" transform="translate(2,2)"/><path d="'+TT+'" fill="#25F4EE" transform="translate(-2,-2)"/><path d="'+TT+'" fill="#fff"/></g>'
+  meta:'<circle r="40" fill="#1877F2"/><text x="0" y="21" text-anchor="middle" font-family="Georgia,\'Times New Roman\',serif" font-size="58" font-weight="700" fill="#fff">f</text>',
+  tiktok:'<circle r="40" fill="#010101"/><text x="3" y="17" text-anchor="middle" font-size="42" fill="#FE2C55">'+TTN+'</text><text x="-3" y="15" text-anchor="middle" font-size="42" fill="#25F4EE">'+TTN+'</text><text x="0" y="16" text-anchor="middle" font-size="42" fill="#fff">'+TTN+'</text>',
+  custconv:'<circle r="34" fill="#fff" stroke="#1877F2" stroke-width="3"/><path d="M-17,-12 L17,-12 L5,3 L5,17 L-5,12 L-5,3 Z" fill="#1877F2"/>',
+  ads_meta:'<rect x="-34" y="-34" width="68" height="68" rx="15" fill="#1877F2"/>'+bars('#fff'),
+  ads_tiktok:'<rect x="-34" y="-34" width="68" height="68" rx="15" fill="#010101"/>'+bars('#fff'),
+  ads_google:'<rect x="-34" y="-34" width="68" height="68" rx="15" fill="#fff" stroke="#e2e2e2" stroke-width="2"/><rect x="-19" y="-2" width="10" height="22" rx="3" fill="#4285F4"/><rect x="-5" y="-14" width="10" height="34" rx="3" fill="#FBBC04"/><rect x="9" y="-22" width="10" height="42" rx="3" fill="#34A853"/>',
+  ads_youtube:'<rect x="-34" y="-34" width="68" height="68" rx="15" fill="#FF0000"/><path d="M-11,-15 L17,0 L-11,15 Z" fill="#fff"/>'
  };
  const EDGES=[
   {id:'site_wc',a:'website',b:'webc',type:'core',both:true},
@@ -126,64 +175,108 @@ svg#bhsvg{width:100%;height:auto;display:block;margin-top:8px;}
   {id:'sc_fbcapi',a:'serverc',b:'fbcapi',type:'server'},
   {id:'sc_ttapi',a:'serverc',b:'ttapi',type:'server'},
   {id:'sc_ga4',a:'serverc',b:'ga4',type:'server',muted:true},
-  {id:'dd_meta',a:'fbpx',b:'fbcapi',type:'dedup',curve:1,both:true},
-  {id:'dd_tt',a:'ttpx',b:'ttapi',type:'dedup',curve:1,both:true}
+  {id:'dd_meta',a:'fbpx',b:'fbcapi',type:'dedup',curve:1,both:true,side:-1,cx:58},
+  {id:'dd_tt',a:'ttpx',b:'ttapi',type:'dedup',curve:1,both:true,side:1,cx:52},
+  {id:'cc_px',a:'fbpx',b:'custconv',type:'core',thin:true,internal:true},
+  {id:'cc_capi',a:'fbcapi',b:'custconv',type:'core',thin:true,internal:true},
+  {id:'metabox_ads',a:'metabox',b:'metaads',type:'ads',both:true,eco:true},
+  {id:'ttbox_ads',a:'ttbox',b:'ttads',type:'ads',both:true,eco:true},
+  {id:'ga4_gads',a:'ga4',b:'gads',type:'browser',muted:true,eco:true},
+  {id:'ga4_yt',a:'ga4',b:'ytads',type:'browser',muted:true,eco:true},
+  {id:'tr_g',a:'gads',b:'website',type:'traffic',traffic:1,ring:0,eco:true},
+  {id:'tr_y',a:'ytads',b:'website',type:'traffic',traffic:1,ring:1,eco:true},
+  {id:'tr_m',a:'metaads',b:'website',type:'traffic',traffic:1,ring:2,eco:true},
+  {id:'tr_t',a:'ttads',b:'website',type:'traffic',traffic:1,ring:3,eco:true}
  ];
  const DESC={
-  client:'<b>① Nur Client-Side Tracking (Browser).</b> Alle Events werden direkt im Browser über Pixel/Tags erfasst und an Meta, TikTok und GA4 gesendet. Einfach umzusetzen – aber anfällig für Ad-Blocker, Safari/ITP und fehlende Cookie-Einwilligungen. Das führt zu spürbaren Datenverlusten.',
-  server:'<b>② Nur Server-Side Tracking.</b> Der Web-Container leitet Events an den Server-Container weiter, der serverseitig sendet: Meta Conversions API, TikTok Events API und GA4. Robuster, datenschutzfreundlicher und deutlich weniger Verluste – dafür mehr Setup-Aufwand.',
-  hybrid:'<b>③ Hybrides Tracking (Client + Server).</b> Pixel im Browser UND serverseitige API laufen parallel. Die <b>Event-Deduplizierung</b> verhindert Doppelzählung. Beste Datenqualität – unsere Empfehlung für Meta und TikTok.'
+  client:'<b>① Nur Client-Side Tracking (Browser).</b> Events werden im Browser über Pixel/Tags erfasst und an Meta, TikTok und GA4 gesendet. Einfach – aber anfällig für Ad-Blocker, Safari/ITP und fehlende Einwilligungen, daher spürbare Datenverluste.',
+  server:'<b>② Nur Server-Side Tracking.</b> Der Web-Container leitet an den Server-Container weiter, der serverseitig sendet: Meta CAPI, TikTok Events API, GA4. Robuster, datenschutzfreundlicher, weniger Verluste.',
+  hybrid:'<b>③ Hybrides Tracking (Client + Server).</b> Pixel UND API laufen parallel, Event-Deduplizierung verhindert Doppelzählung. Beste Datenqualität – unsere Empfehlung für Meta und TikTok.'
  };
- const GA4NOTE=' &nbsp;·&nbsp; <span style="color:#9A9A9E"><b>GA4 (grau)</b> setzen wir bei B&amp;H nicht selbst auf – hier nur zur Einordnung. Bei vorhandenem Server-Container kannst du wählen, ob GA4-Daten direkt via Web oder via Server-Container fliessen.</span>';
+ const EMNOTE=' &nbsp;·&nbsp; <span style="color:#1877F2"><b>Meta Events Manager</b> = Pixel + CAPI + Custom Conversions (aus Pixel &amp; CAPI). Der Ads-Manager greift <b>wechselseitig</b> zu – nicht jedes Signal wird auch ein Ergebnis.</span>';
+ const FPNOTE=' <span style="color:#b5651d"><b>First-Party:</b> Server-Container als <b>hub.domain.ch</b>, gehostet über <b>stape.io</b>.</span>';
+ const GA4NOTE=' &nbsp;·&nbsp; <span style="color:#9A9A9E"><b>GA4 / Google / YouTube (grau)</b> – nur zur Einordnung, von B&amp;H nicht aufgesetzt.</span>';
+ const ECONOTE=' <span style="color:#2BA84A"><b>Ökosystem:</b> Aus den Ads-Managern werden Nutzer:innen zurück auf die Website geführt – der Kreislauf beginnt von neuem.</span>';
 
  const edgesG=document.getElementById('bh-edges');
+ const decoG=document.getElementById('bh-deco');
  const dots=document.getElementById('bh-dots');
  const nodesG=document.getElementById('bh-nodes');
+ const fpG=document.getElementById('bh-fp');
  const desc=document.getElementById('bh-desc');
- let state={scenario:'client',ga4:'web'};
+ let state={scenario:'client',ga4:'web',view:'eco'};
  let playing=true, speed=1;
 
+ function trafficPath(e){
+  const a=getN(e.a), R=14, i=e.ring;
+  const xR=1448+i*16, yT=54-i*13, xL=54-i*12, yE=394+i*12;
+  const sx=a.x+a.r, sy=a.y, ex=82;
+  return 'M'+sx+','+sy
+   +' L'+(xR-R)+','+sy+' Q'+xR+','+sy+' '+xR+','+(sy-R)
+   +' L'+xR+','+(yT+R)+' Q'+xR+','+yT+' '+(xR-R)+','+yT
+   +' L'+(xL+R)+','+yT+' Q'+xL+','+yT+' '+xL+','+(yT+R)
+   +' L'+xL+','+(yE-R)+' Q'+xL+','+yE+' '+(xL+R)+','+yE
+   +' L'+ex+','+yE;
+ }
  function pathFor(e){
-  const a=NODES[e.a], b=NODES[e.b];
+  if(e.traffic) return trafficPath(e);
+  const a=getN(e.a), b=getN(e.b);
   if(e.curve){
-   const cx=a.x+150;
-   return 'M'+(a.x+34)+','+(a.y+18)+' C '+cx+','+(a.y+20)+' '+cx+','+(b.y-20)+' '+(b.x+34)+','+(b.y-18);
+   const s=e.side||1, off=(e.cx||150);
+   const cxv=a.x+off*s;
+   return 'M'+(a.x+30*s)+','+(a.y+16)+' C '+cxv+','+(a.y+18)+' '+cxv+','+(b.y-18)+' '+(b.x+30*s)+','+(b.y-16);
   }
   const dx=b.x-a.x, dy=b.y-a.y, L=Math.hypot(dx,dy), ux=dx/L, uy=dy/L;
   return 'M'+(a.x+ux*a.r)+','+(a.y+uy*a.r)+' L '+(b.x-ux*b.r)+','+(b.y-uy*b.r);
  }
- function colOf(t){return t==='browser'?C.orange:t==='server'?C.blue:t==='core'?C.anth:C.dd;}
+ function colOf(t){return t==='browser'?C.orange:t==='server'?C.blue:t==='dedup'?C.dd:t==='traffic'?C.green:C.anth;}
 
- // build nodes
  Object.keys(NODES).forEach(function(id){
   const n=NODES[id];
   const g=document.createElementNS(NS,'g');
   g.setAttribute('class','bh-node'+(n.muted?' muted':''));
   g.setAttribute('id','n-'+id);
   g.setAttribute('transform','translate('+n.x+','+n.y+')');
-  let h=ICON[n.icon]+'<text class="bh-nlabel" y="'+(n.r+26)+'" text-anchor="middle">'+n.label+'</text>';
-  if(n.muted) h+='<text class="bh-note" y="'+(n.r+44)+'" text-anchor="middle">von B&amp;H nicht aufgesetzt</text>';
+  const sc=n.scale||1;
+  let h='<g transform="scale('+sc+')">'+ICON[n.icon]+'</g>';
+  h+='<text class="bh-nlabel" y="'+(n.r+23)+'" text-anchor="middle">'+n.label+'</text>';
+  if(n.sub) h+='<text class="bh-nsub" y="'+(n.r+41)+'" text-anchor="middle">'+n.sub+'</text>';
+  if(id==='ga4') h+='<text class="bh-note" y="'+(n.r+41)+'" text-anchor="middle">von B&amp;H nicht aufgesetzt</text>';
   g.innerHTML=h;
   nodesG.appendChild(g);
  });
 
- // build edges
+ // Dedup-Labels (statisch, neben den Bögen)
+ decoG.innerHTML =
+  '<text class="bh-dlabel" x="628" y="397" text-anchor="end">DEDUP</text>'+
+  '<text class="bh-dlabel" x="802" y="669" text-anchor="start">DEDUP</text>';
+
+ fpG.innerHTML =
+  '<path d="M370,690 L370,705" stroke="#F5821F" stroke-width="2.5" stroke-dasharray="2 5" fill="none"/>'+
+  '<rect x="185" y="705" width="372" height="86" rx="12" fill="#fff7ef" stroke="#f0d9bf" stroke-width="1.5"/>'+
+  '<rect x="185" y="705" width="6" height="86" rx="3" fill="#F5821F"/>'+
+  '<text x="211" y="733" font-family="Montserrat,sans-serif" font-size="13" font-weight="700" fill="#F5821F">FIRST-PARTY ENDPOINT</text>'+
+  '<text x="211" y="767" font-family="\'Courier New\',monospace" font-size="21" font-weight="700" fill="#58585B">hub.domain.ch</text>'+
+  '<g transform="translate(415,759)"><rect x="0" y="-15" width="122" height="30" rx="15" fill="#10151C"/><circle cx="20" cy="0" r="8.5" fill="#27C281"/><text x="35" y="5" font-family="Montserrat,sans-serif" font-size="15" font-weight="700" fill="#fff">stape.io</text></g>';
+
  EDGES.forEach(function(e){
   const p=document.createElementNS(NS,'path');
   p.setAttribute('d',pathFor(e));
   p.setAttribute('class','edge'+(e.muted?' muted':''));
   p.setAttribute('stroke',colOf(e.type));
-  p.setAttribute('stroke-width', e.muted?2.4:(e.type==='dedup'?2.4:e.type==='core'?3:4));
+  p.setAttribute('stroke-width', e.thin?2:(e.type==='traffic'?2.6:(e.muted?2.4:(e.type==='dedup'?3:e.type==='core'?3:e.type==='ads'?3.4:4))));
   p.setAttribute('stroke-linecap','round');
-  if(e.type==='dedup') p.setAttribute('stroke-dasharray','2 7');
+  if(e.type==='dedup') p.setAttribute('stroke-dasharray','3 6');
+  if(e.type==='traffic') p.setAttribute('stroke-dasharray','9 7');
   if(e.muted) p.setAttribute('stroke-dasharray','7 6');
-  p.setAttribute('marker-end','url(#m-'+e.type+')');
-  if(e.both) p.setAttribute('marker-start','url(#m-'+e.type+'-s)');
+  const mk=(e.type==='ads')?'core':e.type;
+  p.setAttribute('marker-end','url(#m-'+mk+')');
+  if(e.both) p.setAttribute('marker-start','url(#m-'+mk+'-s)');
   edgesG.appendChild(p);
   e.el=p; e.len=p.getTotalLength(); e.parts=[]; e.acc=0; e.flip=false; e.act=false;
  });
 
- function isActive(e,s){
+ function baseActive(e,s){
   switch(e.id){
    case 'site_wc': return true;
    case 'wc_fbpx': return s.scenario!=='server';
@@ -195,19 +288,27 @@ svg#bhsvg{width:100%;height:auto;display:block;margin-top:8px;}
    case 'sc_ga4': return s.ga4==='server';
    case 'dd_meta': return s.scenario==='hybrid';
    case 'dd_tt': return s.scenario==='hybrid';
+   case 'cc_px': return true;
+   case 'cc_capi': return true;
+   case 'metabox_ads': return true;
+   case 'ttbox_ads': return true;
+   case 'ga4_gads': return true;
+   case 'ga4_yt': return true;
+   case 'tr_g': case 'tr_y': case 'tr_m': case 'tr_t': return true;
   }
   return false;
  }
+ function isActive(e,s){ if(e.eco && s.view!=='eco') return false; return baseActive(e,s); }
 
  function spawn(e){
   let dir=1;
   if(e.both){ e.flip=!e.flip; dir=e.flip?1:-1; }
   const c=document.createElementNS(NS,'circle');
-  c.setAttribute('r', e.type==='dedup'?3.5:(e.muted?4:5));
+  c.setAttribute('r', e.thin?3.2:(e.type==='dedup'?4:(e.type==='traffic'?4.5:(e.muted?4:5))));
   c.setAttribute('fill', colOf(e.type));
   if(e.muted) c.setAttribute('opacity','0.85');
   dots.appendChild(c);
-  e.parts.push({el:c, d: dir>0?0:e.len, dir:dir, v:(e.type==='dedup'?90:130)});
+  e.parts.push({el:c, d: dir>0?0:e.len, dir:dir, v:(e.type==='dedup'?80:e.type==='ads'?120:e.type==='traffic'?150:130)});
  }
  function advance(e,p,dt){
   p.d += p.v*dt*speed*p.dir;
@@ -217,26 +318,30 @@ svg#bhsvg{width:100%;height:auto;display:block;margin-top:8px;}
   return true;
  }
 
+ const ALWAYS=['website','webc','ga4','custconv'];
  function apply(){
   if(state.scenario==='client') state.ga4='web';
-  const an=new Set(['website','webc','ga4']);
+  const an=new Set(ALWAYS);
   EDGES.forEach(function(e){
    const act=isActive(e,state);
    e.act=act;
    e.el.classList.toggle('off',!act);
    if(!act){ e.parts.forEach(function(p){p.el.remove();}); e.parts=[]; }
-   if(act){ an.add(e.a); an.add(e.b); }
+   if(act && !e.internal){ if(NODES[e.a])an.add(e.a); if(NODES[e.b])an.add(e.b); }
   });
   Object.keys(NODES).forEach(function(id){
    document.getElementById('n-'+id).classList.toggle('off',!an.has(id));
   });
+  fpG.classList.toggle('off',!an.has('serverc'));
   document.querySelectorAll('.bh-tab').forEach(function(b){ b.classList.toggle('on', b.dataset.sc===state.scenario); });
+  document.getElementById('view-track').classList.toggle('on',state.view==='track');
+  document.getElementById('view-eco').classList.toggle('on',state.view==='eco');
   const lock=state.scenario==='client';
   const w=document.getElementById('ga4-web'), s=document.getElementById('ga4-srv');
   w.disabled=lock; s.disabled=lock;
   w.classList.toggle('on',state.ga4==='web');
   s.classList.toggle('on',state.ga4==='server');
-  desc.innerHTML=DESC[state.scenario]+GA4NOTE;
+  desc.innerHTML=DESC[state.scenario]+EMNOTE+'<br>'+FPNOTE+GA4NOTE+(state.view==='eco'?'<br>'+ECONOTE:'');
  }
 
  document.querySelectorAll('.bh-tab').forEach(function(b){
@@ -246,6 +351,8 @@ svg#bhsvg{width:100%;height:auto;display:block;margin-top:8px;}
    apply();
   });
  });
+ document.getElementById('view-track').addEventListener('click',function(){ state.view='track'; apply(); });
+ document.getElementById('view-eco').addEventListener('click',function(){ state.view='eco'; apply(); });
  document.getElementById('ga4-web').addEventListener('click',function(){ if(state.scenario!=='client'){state.ga4='web';apply();}});
  document.getElementById('ga4-srv').addEventListener('click',function(){ if(state.scenario!=='client'){state.ga4='server';apply();}});
  const playBtn=document.getElementById('bh-play');
@@ -258,10 +365,10 @@ svg#bhsvg{width:100%;height:auto;display:block;margin-top:8px;}
   if(playing){
    EDGES.forEach(function(e){
     if(!e.act) return;
-    const base=e.type==='dedup'?1.5:(e.muted?1.7:0.8);
+    const base=e.thin?1.3:(e.type==='dedup'?1.2:(e.type==='traffic'?1.0:(e.muted?1.7:0.85)));
     e.acc+=dt;
     const intv=base/speed;
-    while(e.acc>=intv && e.parts.length<14){ spawn(e); e.acc-=intv; }
+    while(e.acc>=intv && e.parts.length<16){ spawn(e); e.acc-=intv; }
     e.parts=e.parts.filter(function(p){return advance(e,p,dt);});
    });
   }
